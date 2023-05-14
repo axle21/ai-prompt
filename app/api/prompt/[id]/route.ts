@@ -40,7 +40,7 @@ export const PATCH = async (request, { params }:any) => {
     }
 };
 
-export const DELETE = async (request, { params } :any) => {
+export const DELETE = async (request:any, { params } :any) => {
     try {
         await connectToDB();
 
