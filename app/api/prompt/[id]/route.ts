@@ -1,7 +1,7 @@
 import Prompt from "@models/prompt";
 import { connectToDB } from "@utils/database";
 
-export const GET = async (request, { params } :any) => {
+export const GET = async (request:any, { params } :any) => {
     try {
         await connectToDB()
 
@@ -15,7 +15,7 @@ export const GET = async (request, { params } :any) => {
     }
 }
 
-export const PATCH = async (request, { params }:any) => {
+export const PATCH = async (request:any, { params }:any) => {
     const { prompt, tag } = await request.json();
 
     try {
